@@ -45,16 +45,17 @@ end
 
 
 function M.use_expandtab(size)
+  vim.opt.tabstop = size
   vim.opt.shiftwidth = size
   vim.opt.softtabstop = size
   vim.opt.expandtab = true
 end
 
 function M.use_noexpandtab(size)
+  vim.opt.tabstop = size
   vim.opt.shiftwidth = size
   vim.opt.softtabstop = 0
   vim.opt.expandtab = false
-  vim.opt.cindent = true
 end
 
 return M
