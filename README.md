@@ -51,7 +51,7 @@ You can config the indent settings by the following options.
 -- Default options.
 require("nvim-indentconfig").setup({
   -- The global indent settings here.
-  -- This option would set all the filetyps.
+  -- This option would set all the filetypes.
   default = {
     expandtab = true,
     size = 2,

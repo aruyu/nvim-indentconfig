@@ -1,11 +1,11 @@
-*nvim-indentconfig*                A simple config plugin written by Lua Script
+*nvim-indentconfig*               A simple config plugin written by Lua Script
 
 ==============================================================================
 Contents                                          *nvim-indentconfig-contents*
 
-  Introduction................................ |nvim-indentconfig-introduction|
-  Setup....................................... |nvim-indentconfig-setup|
-  License..................................... |nvim-indentconfig-license|
+  Introduction............................... |nvim-indentconfig-introduction|
+  Setup...................................... |nvim-indentconfig-setup|
+  License.................................... |nvim-indentconfig-license|
 
 ==============================================================================
 Introduction                                  *nvim-indentconfig-introduction*
