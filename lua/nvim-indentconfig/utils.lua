@@ -11,8 +11,8 @@
 
 local M = {}
 local api = vim.api
-
 local autoindents_group = api.nvim_create_augroup('AutoindentsGroup', { clear = true })
+
 
 function M.init_indent()
   vim.cmd(
