@@ -31,14 +31,14 @@ or just DO NOT configure **filetype plugin indent** option.
 ### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 ```lua
 use {
-  'vine91/nvim-indentconfig',
+  'astaos/nvim-indentconfig',
   config = function() require("nvim-indentconfig").setup() end,
 }
 ```
 
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 ```vim
-Plug 'vine91/nvim-indentconfig'
+Plug 'astaos/nvim-indentconfig'
 lua << EOF
 require("nvim-indentconfig").setup()
 EOF
