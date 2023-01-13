@@ -63,20 +63,20 @@ require("nvim-indentconfig").setup({
     {
       expandtab = false,
       size = 8,
-      filetype = {
-        'make',
-        'c',
-        'cpp',
-      }
+      filetype = { 'make','c','cpp' }
     },
 
     {
       expandtab = true,
       size = 4,
-      filetype = {
-        'verilog',
-      }
+      filetype = { 'verilog' }
     },
-  }
+  },
+
+  -- The filetype settings by filename here.
+  -- This option would re-set specific filetype by specific filename.
+  ft_preset = {
+    { filename = '*.h', filetype = 'c' }
+  },
 })
 ```

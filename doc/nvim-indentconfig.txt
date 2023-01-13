@@ -1,14 +1,14 @@
-*nvim-indentconfig*               A simple config plugin written by Lua Script
+*nvim-indentconfig*                 A simple config plugin written by Lua Script
 
-==============================================================================
-Contents                                          *nvim-indentconfig-contents*
+================================================================================
+Contents                                            *nvim-indentconfig-contents*
 
-  Introduction............................... |nvim-indentconfig-introduction|
-  Setup...................................... |nvim-indentconfig-setup|
-  License.................................... |nvim-indentconfig-license|
+  Introduction................................. |nvim-indentconfig-introduction|
+  Setup........................................ |nvim-indentconfig-setup|
+  License...................................... |nvim-indentconfig-license|
 
-==============================================================================
-Introduction                                  *nvim-indentconfig-introduction*
+================================================================================
+Introduction                                    *nvim-indentconfig-introduction*
 
 The plugin would fix 'set expandtab' that is caused by nvim's runtime
 ftplugin. (/usr/share/nvim/runtime/ftplugin/*.vim)
@@ -16,8 +16,8 @@ ftplugin. (/usr/share/nvim/runtime/ftplugin/*.vim)
 As you config the options, the global indent settings would be changed.
 You can also config the indent settings in separated filetypes.
 
-==============================================================================
-Setup                                                *nvim-indentconfig-setup*
+================================================================================
+Setup                                                  *nvim-indentconfig-setup*
 
 To use nvim-indentconfig plugin, you have to call the setup function.
 
@@ -28,9 +28,9 @@ Example:
   })
 <
 
-                                                   *nvim-indentconfig-options*
+                                                     *nvim-indentconfig-options*
 
-`default`                                        - The global indent settings.
+`default`                                          - The global indent settings.
 
 Example:
 >
@@ -40,12 +40,13 @@ Example:
       size = 2,
     },
 
-    exclusions = {}
+    exclusions = {},
+    ft_preset = {},
   })
 <
 
 
-`exclusions`                       - The exclusions filetypes indent settings.
+`exclusions`                         - The exclusions filetypes indent settings.
 
 Example:
 >
@@ -75,12 +76,33 @@ Example:
       },
 
       -- More exclusions... --
-    }
+    },
+
+    ft_preset = {},
   })
 <
 
-==============================================================================
-LICENSE                                            *nvim-indentconfig-license*
+
+`ft_preset`                                 - The filetype settings by filename.
+
+Example:
+>
+  require("nvim-indentconfig").setup({
+    default = {
+      expandtab = true,
+      size = 2,
+    },
+
+    exclusions = {},
+
+    ft_preset = {
+      { filename = '*.h', filetype = 'c' }
+    },
+  })
+<
+
+================================================================================
+LICENSE                                              *nvim-indentconfig-license*
 >
   MIT License
 
@@ -105,6 +127,6 @@ LICENSE                                            *nvim-indentconfig-license*
   SOFTWARE.
 <
 
-==============================================================================
+================================================================================
 
  vim:tw=78:ts=8:noet:ft=help:norl:
