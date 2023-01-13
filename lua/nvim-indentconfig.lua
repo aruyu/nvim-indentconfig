@@ -23,6 +23,10 @@ function M.setup(opt)
   for _, exclusions in ipairs(configs.exclusions) do
     utils.make_indent(exclusions.expandtab, exclusions.size, exclusions.filetype)
   end
+
+  for _, ft_preset in ipairs(configs.ft_preset) do
+    utils.make_filetype(ft_preset.filename, ft_preset.filetype)
+  end
 end
 
 return M

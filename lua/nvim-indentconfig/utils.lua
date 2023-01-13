@@ -43,6 +43,17 @@ function M.make_indent(expandtab, size, filetype)
   end
 end
 
+function M.make_filetype(filename, filetype)
+  api.nvim_create_autocmd(
+    { 'BufNewFile','BufReadPost' },
+    {
+      pattern = filename,
+      command = 'lua require("nvim-indentconfig.utils").set_filetype("' .. filetype .. '")',
+      group = autoindents_group,
+    }
+  )
+end
+
 
 function M.use_expandtab(size)
   vim.opt.tabstop = size
@@ -56,6 +67,10 @@ function M.use_noexpandtab(size)
   vim.opt.shiftwidth = size
   vim.opt.softtabstop = 0
   vim.opt.expandtab = false
+end
+
+function M.set_filetype(type)
+  vim.opt.filetype = type
 end
 
 return M
