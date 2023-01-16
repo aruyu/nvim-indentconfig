@@ -13,7 +13,7 @@
 - Set 'expandtab' or 'noexpandtab' and also 'shiftwidth' to what you want in several ways.
   - Set the global indent settings and exclude the filetypes as much as you want.
   - The excluded filetypes could also change the config of 'shiftwidth'.
-- Re-set the filetype by specific filename, e.g. '*.c', '*.js' and else.
+- Re-set the filetype by specific filename, e.g. '\*.c', '\*.js' and else.
 
 ## Required setting
 
