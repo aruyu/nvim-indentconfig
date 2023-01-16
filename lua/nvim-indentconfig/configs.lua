@@ -16,7 +16,7 @@ local default_options = {
   -- This option would set all the filetypes.
   default = {
     expandtab = true,
-    size = 2,
+    size = 2
   },
 
   -- The exclusion indent settings here.
@@ -38,7 +38,7 @@ local default_options = {
   -- The filetype settings by filename here.
   -- This option would re-set specific filetype by specific filename.
   ft_preset = {
-    { filename = '*.h', filetype = 'c' }
+    { filename = '*.h', filetype = 'c' },
   },
 }
 
