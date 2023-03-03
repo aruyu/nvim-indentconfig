@@ -13,7 +13,7 @@ Contents                                            *nvim-indentconfig-contents*
   Contents..................................... |nvim-indentconfig-contents|
   Introduction................................. |nvim-indentconfig-introduction|
   Setup........................................ |nvim-indentconfig-setup|
-  Options...................................... |nvim-indentconfig-options|
+  Configs...................................... |nvim-indentconfig-configs|
   License...................................... |nvim-indentconfig-license|
 
 ================================================================================
@@ -33,11 +33,12 @@ To use nvim-indentconfig plugin, you have to call the setup function.
 Example:
 >
   require("nvim-indentconfig").setup({
-    -- Custom options --
+    -- Custom configs --
   })
 <
 
-                                                     *nvim-indentconfig-options*
+================================================================================
+Configs                                              *nvim-indentconfig-configs*
 
 `default`                                          - The global indent settings.
 

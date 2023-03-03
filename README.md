@@ -3,7 +3,20 @@
 [![Lua](https://img.shields.io/badge/Lua-blue.svg?style=for-the-badge&logo=lua)](http://www.lua.org)
 [![Neovim](https://img.shields.io/badge/Neovim-green.svg?style=for-the-badge&logo=neovim)](https://neovim.io)
 
+<div align='center'>
+
+```css
+ ____          __           __                   _____
+      /  _/___  ____/ /__  ____  / /__________  ____  / __(_)___ _
+      / // __ \/ __  / _ \/ __ \/ __/ ___/ __ \/ __ \/ /_/ / __ `/
+   _/ // / / / /_/ /  __/ / / / /_/ /__/ /_/ / / / / __/ / /_/ /
+ /___/_/ /_/\__,_/\___/_/ /_/\__/\___/\____/_/ /_/_/ /_/\__, /
+                                                      /____/
+```
+
 ### A simple config plugin for indent written by Lua Script
+
+</div>
 
 ![ftplugin](https://user-images.githubusercontent.com/75081360/201606692-648c8dae-913e-4dcc-b1dd-fa7b0c0d4e10.png)
 
