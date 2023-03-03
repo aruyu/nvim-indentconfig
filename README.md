@@ -16,9 +16,9 @@
 
 ### A simple config plugin for indent written by Lua Script
 
-</div>
-
 ![ftplugin](https://user-images.githubusercontent.com/75081360/201606692-648c8dae-913e-4dcc-b1dd-fa7b0c0d4e10.png)
+
+</div>
 
 ## Features
 
