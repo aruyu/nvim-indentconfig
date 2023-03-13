@@ -101,3 +101,7 @@ require("nvim-indentconfig").setup({
   },
 })
 ```
+
+## Contributors
+
+> Always be welcomed all the pull requests! :D
