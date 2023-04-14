@@ -50,7 +50,7 @@ or just DO NOT configure **filetype plugin indent** option.
 
 ```lua
 use {
-  'astaos/nvim-indentconfig',
+  'aruyu/nvim-indentconfig',
   config = function() require("nvim-indentconfig").setup() end,
 }
 ```
@@ -58,7 +58,7 @@ use {
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'astaos/nvim-indentconfig'
+Plug 'aruyu/nvim-indentconfig'
 lua << EOF
   require("nvim-indentconfig").setup()
 EOF
